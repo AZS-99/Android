@@ -1,0 +1,4 @@
+1- To create APK file on IntelliJ:
+	Build -> 'Generate Signed Bundles / APK' -> Select APK -> Create New
+	Select Release 
+	You'll find the APK file in the 'release' directory
