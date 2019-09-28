@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+              android:layout_height="wrap_content" android:layout_width="wrap_content">
+
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_marginTop="25dp">
+        <TextView
+                android:id="@+id/secondActivityText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textColor="#696969"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+        />
+
+        <Button
+                android:id="@+id/homeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Home"
+                android:textColor="#ff0000"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+        />
+
+    </LinearLayout>
+
+</LinearLayout>
+
