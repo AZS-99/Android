@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
-    TableLayout table;
+    TableLayout alphaTable, numericTable;
     TableRow tr;
     TextView text;
     @Override
@@ -15,7 +15,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        table = (TableLayout)findViewById(R.id.alphaTable);
+        alphaTable = (TableLayout)findViewById(R.id.alphaTable);
+        numericTable = (TableLayout) findViewById(R.id.numericTable);
 
 
         for(char i = 'A'; i <= 'Z'; ++i) {
@@ -24,12 +25,16 @@ public class MainActivity extends AppCompatActivity {
             text.setTextSize(20);
             text.setText(Character.toString(i)); //setText accepts only strings ... not char (gave me hell)
             tr.addView(text);
-            table.addView(tr);
+            alphaTable.addView(tr);
         }
 
-
-
-
+        for (int i = 1; i < 100; ++i) {
+            tr = new TableRow(this);
+            text = new TextView(this);
+            text.setText(Integer.toString(i));
+            tr.addView(text);
+            numericTable.addView(tr);
+        }
 
 
     }
