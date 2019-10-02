@@ -82,6 +82,27 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        red.setOnClickListener(new CheckBox.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "Red", Toast.LENGTH_LONG).show();
+            }
+        });
+
+        blue.setOnClickListener(new CheckBox.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "Blue", Toast.LENGTH_LONG).show();
+            }
+        });
+
+        green.setOnClickListener(new CheckBox.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "Green", Toast.LENGTH_LONG).show();
+            }
+        });
+
 
 
     }

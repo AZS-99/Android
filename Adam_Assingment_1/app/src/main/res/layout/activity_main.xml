@@ -18,6 +18,7 @@
         <TextView
                 android:text="Assignment 1"
                 android:textStyle="bold"
+                android:textSize="25sp"
                 android:gravity="center"
                 android:background="#ffff00"
                 android:layout_width="match_parent"
@@ -41,6 +42,7 @@
                     <TextView
                             android:id="@+id/textView4"
                             android:text="Bonjour World"
+                            android:textSize="25sp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content" />
                     <RadioGroup
@@ -50,21 +52,25 @@
                         <RadioButton
                                 android:id="@+id/radioButton5"
                                 android:text="Alpha"
+                                android:textSize="25sp"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"/>
                         <RadioButton
                                 android:text="Bravo"
+                                android:textSize="25sp"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:id="@+id/radioButton4"
                                 />
                         <RadioButton
                                 android:text="Charlie"
+                                android:textSize="25sp"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:id="@+id/radioButton6"/>
                         <Button
                                 android:text="Say Bonjour"
+                                android:textSize="25sp"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content" android:id="@+id/button6"/>
 
@@ -77,6 +83,7 @@
                         android:layout_weight="1">
                     <TextView
                             android:text="Hi Seneca"
+                            android:textSize="25sp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:id="@+id/textView5"/>
@@ -86,18 +93,22 @@
                             android:layout_height="match_parent">
                         <RadioButton
                                 android:text="Delta"
+                                android:textSize="25sp"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content" android:id="@+id/radioButton8"/>
                         <RadioButton
                                 android:text="Echo"
+                                android:textSize="25sp"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content" android:id="@+id/radioButton9"/>
                         <RadioButton
                                 android:text="Foxtrot"
+                                android:textSize="25sp"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content" android:id="@+id/radioButton7"/>
                         <Button
                                 android:text="Say Hi"
+                                android:textSize="25sp"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content" android:id="@+id/button5"/>
                     </RadioGroup>
@@ -114,16 +125,19 @@
                         android:layout_height="wrap_content">
                     <CheckBox
                             android:text="Red"
+                            android:textSize="25sp"
                             android:background="#ff0000"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content" android:id="@+id/checkBox" android:layout_weight="1"/>
                     <CheckBox
                             android:text="Green"
+                            android:textSize="25sp"
                             android:background="#00ff00"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content" android:id="@+id/checkBox2" android:layout_weight="1"/>
                     <CheckBox
                             android:text="Blue"
+                            android:textSize="25sp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:id="@+id/checkBox3"
@@ -136,6 +150,7 @@
                         android:layout_height="match_parent">
                     <Button
                             android:text="Colours"
+                            android:textSize="25sp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content" android:id="@+id/button7"/>
                 </LinearLayout>
