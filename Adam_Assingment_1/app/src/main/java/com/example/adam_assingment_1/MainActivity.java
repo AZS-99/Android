@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                 selectedId = bonjourGrp.getCheckedRadioButtonId();
                 selectedRadio = (RadioButton)findViewById(selectedId);
                 bonjourTxt.setText("Bonjour " + selectedRadio.getText());
-                Toast.makeText(MainActivity.this, selectedRadio.getText(), Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, selectedRadio.getText(), Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
                 selectedId = hiGrp.getCheckedRadioButtonId();
                 selectedRadio = (RadioButton)findViewById(selectedId);
                 hiTxt.setText("Hi " + selectedRadio.getText());
-                Toast.makeText(MainActivity.this, selectedRadio.getText(), Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, selectedRadio.getText(), Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 selectedRadio = (RadioButton)findViewById(checkedId);
-                Toast.makeText(MainActivity.this, selectedRadio.getText(), Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, selectedRadio.getText(), Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 selectedRadio = (RadioButton)findViewById(checkedId);
-                Toast.makeText(MainActivity.this, selectedRadio.getText(), Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, selectedRadio.getText(), Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -78,32 +78,33 @@ public class MainActivity extends AppCompatActivity {
                     colours += green.getText() + " ";
                 if (blue.isChecked())
                     colours += blue.getText() + " ";
-                Toast.makeText(MainActivity.this, colours, Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, colours, Toast.LENGTH_SHORT).show();
             }
         });
 
         red.setOnClickListener(new CheckBox.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Red", Toast.LENGTH_LONG).show();
+                if(red.isChecked())
+                    Toast.makeText(MainActivity.this, "Red", Toast.LENGTH_SHORT).show();
             }
         });
 
         blue.setOnClickListener(new CheckBox.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Blue", Toast.LENGTH_LONG).show();
+                if(blue.isChecked())
+                    Toast.makeText(MainActivity.this, "Blue", Toast.LENGTH_SHORT).show();
             }
         });
 
         green.setOnClickListener(new CheckBox.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Green", Toast.LENGTH_LONG).show();
+                if(green.isChecked())
+                    Toast.makeText(MainActivity.this, "Green", Toast.LENGTH_SHORT).show();
             }
         });
-
-
 
     }
 }
