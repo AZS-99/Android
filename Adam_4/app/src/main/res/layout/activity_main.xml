@@ -28,29 +28,26 @@
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-            <ScrollView
+            <ListView
+                    android:id="@+id/simpleListView"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-            >
-                <TableLayout
-                        android:id="@+id/alphaTable"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="#40E0D0"/>
-            </ScrollView>
-            <ScrollView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-            >
+                    android:layout_weight="0.5"
+                    android:background="#00ffff">
 
-                <TableLayout
-                        android:id="@+id/numericTable"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="#FF00FF"/>
-            </ScrollView>
+            </ListView>
+
+            <GridView
+                    android:id="@+id/simpleGridView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:stretchMode="columnWidth"
+                    android:layout_weight="0.5"
+                    android:numColumns="3"
+                    android:background="#ff00ff"
+            >
+                <!--content will be generate programmatically-->
+            </GridView>
         </LinearLayout>
     </LinearLayout>
 
